@@ -60,27 +60,27 @@ class ProfileCard extends Component {
   renderProfile = () => {
     const {profileData} = this.state
     return (
-      <div className="filter-section">
+      <div className='filter-section'>
         <img
           src={profileData.imageUrl}
-          className="profile-image"
-          alt="profile"
+          className='profile-image'
+          alt='profile'
         />
-        <h1 className="profile-username">{profileData.name}</h1>
-        <p className="profile-bio">{profileData.bio}</p>
+        <h1 className='profile-username'>{profileData.name}</h1>
+        <p className='profile-bio'>{profileData.bio}</p>
       </div>
     )
   }
 
   renderProgressView = () => (
-    <div className="loader-container" data-testid="loader">
-      <Loader type="ThreeDots" color="#ffffff" height="50" width="50" />
+    <div className='loader-container' data-testid='loader'>
+      <Loader type='ThreeDots' color='#ffffff' height='50' width='50' />
     </div>
   )
 
   renderFailureView = () => (
-    <div className="loader-container">
-      <button type="button" className="logout-btn" onClick={this.getProfile}>
+    <div className='loader-container'>
+      <button type='button' className='logout-btn' onClick={this.getProfile}>
         Retry
       </button>
     </div>
